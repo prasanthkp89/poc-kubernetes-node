@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js
+
+PATH: 
+  /private/var/www/google-cloud-sdk/bin:/usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/Users/viniciusdias/.npm-global/bin:/Users/viniciusdias/node_modules/@angular/cli:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.npm-global/bin:/Library/Apple/usr/bin:/Users/viniciusdias/development/flutter/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.13.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /private/var/www/poc-kubernetes-node/package.json: Unexpected token y in JSON at position 272
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "poc-kubernetes-node",
+    "version": "1.0.0",
+    "description": "GKE hello world sample in Node",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "",
+    "license": "Apache-2.0",
+    "dependencies": {
+      "express": "^4.16.4"
+    }
+  }y
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
